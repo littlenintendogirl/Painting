@@ -6,13 +6,11 @@
 //Prompt the user to enter the title and artist for each of the 10 Paintings.
 //Consider the Painting to be a FamousPainting if the artist is one of the following: Degas, Monet, Picasso, or Rembrandt.
 //Display the 10 Paintings. Save the file as Paintings.java.
-import java.util.ArrayList;
-import java.util.Scanner;
 
-public class Painting{
-  private String title;
-  private String artist;
-  private int value;
+class Painting{
+  protected String title;
+  protected String artist;
+  protected int value;
 
   public void setTitle(String newTitle){
     title = newTitle;
@@ -22,35 +20,9 @@ public class Painting{
     artist = newArtist;
     return;
   }
-  public void setValue(){
-    value = 400;
-    return;
-  }
-}
-@Override
-public FamousPainting{
-  if(artist.contain(artistList)){
-    value = 25000;
-    return;
-}
-public static void main (String[] args) {
-  ArrayList<String> artistList = new ArrayList<String>();
-    artistList.add(new String("Degas, Edgar"));
-    artistList.add(new String("Monet, Claude"));
-    artistList.add(new String("Picasso, Pablo"));
-    artistList.add(new String("Rembrandt van Rijn"));
-    artistList.add(new String("Leonardo da Vinci"));
-
-  Painting[] paintings = new Painting[10];
-  Scanner scnr = new Scanner(System.in);
-
-  for(int i = 0; i < groceryItem; ++i){
-    System.out.println("Title: ");
-    paintings[i].setTitle(scnr.nextLine());
-
-    System.out.println("Artist: ");
-    paintings[i].setTitle(scnr.nextLine());
-
-    System.out.println(setValue());
+  public static display(){
+    System.out.println("Title: " + title);
+    System.out.println("Artist: " + artist);
+    System.out.println("Value: " + value);
   }
 }
